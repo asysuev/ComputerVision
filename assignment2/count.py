@@ -46,7 +46,7 @@ def detect(img):
     #3.c Remove circles based on the features
     selectedCircles = np.zeros( (nbCircles), np.bool)
     for i in range(nbCircles):
-        if features[i,0]==208 & features[i,1]==202 & features[i,2]==211:    #TODO
+        if features[i,:]:    #TODO
             selectedCircles[i]=1
     circles = circles[selectedCircles]
 
