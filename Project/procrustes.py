@@ -1,3 +1,4 @@
+import numpy as np
 def procrustes(X, Y, scaling=True, reflection='best'):
     """
     A port of MATLAB's `procrustes` function to Numpy.
